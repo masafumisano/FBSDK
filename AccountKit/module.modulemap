@@ -1,0 +1,23 @@
+framework module AccountKit {
+    umbrella header "AccountKit.h"
+    export *
+    module * { export * }
+    header "AKFAccessToken.h"
+    header "AKFAccount.h"
+    header "AKFAccountKit.h"
+    header "AKFButtonType.h"
+    header "AKFConfiguring.h"
+    header "AKFError.h"
+    header "AKFErrorDetail.h"
+    header "AKFLoginFlowState.h"
+    header "AKFLoginType.h"
+    header "AKFPhoneNumber.h"
+    header "AKFResponseType.h"
+    header "AKFSettings.h"
+    header "AKFSkinManager.h"
+    header "AKFTextPosition.h"
+    header "AKFTheme.h"
+    header "AKFUIManager.h"
+    header "AKFUIManaging.h"
+    header "AKFViewController.h"
+}

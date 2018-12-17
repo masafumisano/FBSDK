@@ -1,0 +1,21 @@
+framework module Bolts {
+    umbrella header "Bolts.h"
+    export *
+    module * { export * }
+    header "BFAppLink.h"
+    header "BFAppLinkNavigation.h"
+    header "BFAppLinkResolving.h"
+    header "BFAppLinkReturnToRefererController.h"
+    header "BFAppLinkReturnToRefererView.h"
+    header "BFAppLinkTarget.h"
+    header "BFCancellationToken.h"
+    header "BFCancellationTokenRegistration.h"
+    header "BFCancellationTokenSource.h"
+    header "BFExecutor.h"
+    header "BFGeneric.h"
+    header "BFMeasurementEvent.h"
+    header "BFTask.h"
+    header "BFTaskCompletionSource.h"
+    header "BFURL.h"
+    header "BFWebViewAppLinkResolver.h"
+}

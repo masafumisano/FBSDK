@@ -1,0 +1,14 @@
+framework module FBSDKMessengerShareKit {
+    umbrella header "FBSDKMessengerShareKit.h"
+    export *
+    module * { export * }
+    header "FBSDKMessengerBroadcastContext.h"
+    header "FBSDKMessengerButton.h"
+    header "FBSDKMessengerContext.h"
+    header "FBSDKMessengerShareOptions.h"
+    header "FBSDKMessengerSharer.h"
+    header "FBSDKMessengerURLHandler.h"
+    header "FBSDKMessengerURLHandlerCancelContext.h"
+    header "FBSDKMessengerURLHandlerOpenFromComposerContext.h"
+    header "FBSDKMessengerURLHandlerReplyContext.h"
+}

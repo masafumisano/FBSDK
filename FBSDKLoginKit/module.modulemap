@@ -1,0 +1,14 @@
+framework module FBSDKLoginKit {
+    umbrella header "FBSDKLoginKit.h"
+    export *
+    module * { export * }
+    header "FBSDKDeviceLoginCodeInfo.h"
+    header "FBSDKDeviceLoginManager.h"
+    header "FBSDKDeviceLoginManagerResult.h"
+    header "FBSDKLoginButton.h"
+    header "FBSDKLoginConstants.h"
+    header "FBSDKLoginManager.h"
+    header "FBSDKLoginManagerLoginResult.h"
+    header "FBSDKLoginTooltipView.h"
+    header "FBSDKTooltipView.h"
+}
