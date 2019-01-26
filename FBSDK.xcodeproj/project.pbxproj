@@ -15,8 +15,6 @@
 		212F39222175C60F00EF0979 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		212F392C2175C61700EF0979 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSDKCoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		212F392F2175C61700EF0979 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		212F39392175C62100EF0979 /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSDKMessengerShareKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		212F393C2175C62100EF0979 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		212F39462175C62B00EF0979 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSDKShareKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		212F39492175C62B00EF0979 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		212F39532175C63500EF0979 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSDKLoginKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,7 +26,6 @@
 		212F396A2175C6BE00EF0979 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		212F396B2175C6C400EF0979 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		212F396C2175C6CA00EF0979 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
-		212F396D2175C6D000EF0979 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		212F396E2175C6D600EF0979 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		212F396F2175C6DC00EF0979 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -42,7 +39,6 @@
 				212F392D2175C61700EF0979 /* FBSDKCoreKit */,
 				212F39542175C63500EF0979 /* FBSDKLoginKit */,
 				212F39062175C5F800EF0979 /* FBSDKMarketingKit */,
-				212F393A2175C62100EF0979 /* FBSDKMessengerShareKit */,
 				212F39612175C63D00EF0979 /* FBSDKPlacesKit */,
 				212F39472175C62B00EF0979 /* FBSDKShareKit */,
 				212F38F62175C53400EF0979 /* Products */,
@@ -57,7 +53,6 @@
 				212F392C2175C61700EF0979 /* FBSDKCoreKit.framework */,
 				212F39532175C63500EF0979 /* FBSDKLoginKit.framework */,
 				212F39052175C5F800EF0979 /* FBSDKMarketingKit.framework */,
-				212F39392175C62100EF0979 /* FBSDKMessengerShareKit.framework */,
 				212F39602175C63D00EF0979 /* FBSDKPlacesKit.framework */,
 				212F39462175C62B00EF0979 /* FBSDKShareKit.framework */,
 			);
@@ -100,15 +95,6 @@
 			path = FBSDKCoreKit;
 			sourceTree = "<group>";
 		};
-		212F393A2175C62100EF0979 /* FBSDKMessengerShareKit */ = {
-			isa = PBXGroup;
-			children = (
-				212F393C2175C62100EF0979 /* Info.plist */,
-				212F396D2175C6D000EF0979 /* module.modulemap */,
-			);
-			path = FBSDKMessengerShareKit;
-			sourceTree = "<group>";
-		};
 		212F39472175C62B00EF0979 /* FBSDKShareKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +125,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		212F39042175C5F800EF0979 /* FBSDKMarketingKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 212F390A2175C5F800EF0979 /* Build configuration list for PBXNativeTarget "FBSDKMarketingKit" */;
+			buildPhases = (
+				212F39742175C8BD00EF0979 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FBSDKMarketingKit;
+			productName = FBSDKMarketingKit;
+			productReference = 212F39052175C5F800EF0979 /* FBSDKMarketingKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		212F39112175C60700EF0979 /* AccountKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 212F39172175C60700EF0979 /* Build configuration list for PBXNativeTarget "AccountKit" */;
@@ -184,6 +185,21 @@
 			productReference = 212F392C2175C61700EF0979 /* FBSDKCoreKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		212F39452175C62B00EF0979 /* FBSDKShareKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 212F394B2175C62B00EF0979 /* Build configuration list for PBXNativeTarget "FBSDKShareKit" */;
+			buildPhases = (
+				212F39772175C8D600EF0979 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FBSDKShareKit;
+			productName = FBSDKShareKit;
+			productReference = 212F39462175C62B00EF0979 /* FBSDKShareKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		212F39522175C63500EF0979 /* FBSDKLoginKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 212F39582175C63500EF0979 /* Build configuration list for PBXNativeTarget "FBSDKLoginKit" */;
@@ -199,36 +215,6 @@
 			productReference = 212F39532175C63500EF0979 /* FBSDKLoginKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		212F39042175C5F800EF0979 /* FBSDKMarketingKit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 212F390A2175C5F800EF0979 /* Build configuration list for PBXNativeTarget "FBSDKMarketingKit" */;
-			buildPhases = (
-				212F39742175C8BD00EF0979 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = FBSDKMarketingKit;
-			productName = FBSDKMarketingKit;
-			productReference = 212F39052175C5F800EF0979 /* FBSDKMarketingKit.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		212F39382175C62100EF0979 /* FBSDKMessengerShareKit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 212F393E2175C62100EF0979 /* Build configuration list for PBXNativeTarget "FBSDKMessengerShareKit" */;
-			buildPhases = (
-				212F39752175C8C500EF0979 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = FBSDKMessengerShareKit;
-			productName = FBSDKMessengerShareKit;
-			productReference = 212F39392175C62100EF0979 /* FBSDKMessengerShareKit.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		212F395F2175C63D00EF0979 /* FBSDKPlacesKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 212F39652175C63D00EF0979 /* Build configuration list for PBXNativeTarget "FBSDKPlacesKit" */;
@@ -242,21 +228,6 @@
 			name = FBSDKPlacesKit;
 			productName = FBSDKPlacesKit;
 			productReference = 212F39602175C63D00EF0979 /* FBSDKPlacesKit.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		212F39452175C62B00EF0979 /* FBSDKShareKit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 212F394B2175C62B00EF0979 /* Build configuration list for PBXNativeTarget "FBSDKShareKit" */;
-			buildPhases = (
-				212F39772175C8D600EF0979 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = FBSDKShareKit;
-			productName = FBSDKShareKit;
-			productReference = 212F39462175C62B00EF0979 /* FBSDKShareKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -278,9 +249,6 @@
 						CreatedOnToolsVersion = 10.0;
 					};
 					212F392B2175C61700EF0979 = {
-						CreatedOnToolsVersion = 10.0;
-					};
-					212F39382175C62100EF0979 = {
 						CreatedOnToolsVersion = 10.0;
 					};
 					212F39452175C62B00EF0979 = {
@@ -311,7 +279,6 @@
 				212F392B2175C61700EF0979 /* FBSDKCoreKit */,
 				212F39522175C63500EF0979 /* FBSDKLoginKit */,
 				212F39042175C5F800EF0979 /* FBSDKMarketingKit */,
-				212F39382175C62100EF0979 /* FBSDKMessengerShareKit */,
 				212F395F2175C63D00EF0979 /* FBSDKPlacesKit */,
 				212F39452175C62B00EF0979 /* FBSDKShareKit */,
 			);
@@ -404,23 +371,6 @@
 			shellPath = /bin/sh;
 			shellScript = "BASE_NAME=FacebookSDKs-iOS-${CURRENT_PROJECT_VERSION}\nMODULES_FOLDER_PATH=${EXECUTABLE_FOLDER_PATH}/Modules\nmkdir -p ${PROJECT_TEMP_ROOT}/${BASE_NAME}\ncurl -fsL https://origincache.facebook.com/developers/resources/?id=FacebookSDKs-iOS-${CURRENT_PROJECT_VERSION}.zip | tar -xf - -C ${PROJECT_TEMP_ROOT}/${BASE_NAME}\nmkdir -p ${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH} && cp ${PROJECT_TEMP_ROOT}/${BASE_NAME}/FBSDKMarketingKit.framework/Headers/*.h $_\nmkdir -p ${TARGET_BUILD_DIR}/${MODULES_FOLDER_PATH} && cp ${PROJECT_DIR}/${TARGET_NAME}/module.modulemap $_\nlipo -extract $( echo ${ARCHS} | sed -e 's/ / -extract /g' ) ${PROJECT_TEMP_ROOT}/${BASE_NAME}/FBSDKMarketingKit.framework/${TARGET_NAME} -o ${TARGET_BUILD_DIR}/${EXECUTABLE_FOLDER_PATH}/${TARGET_NAME}\nchmod 644 ${TARGET_BUILD_DIR}/${EXECUTABLE_FOLDER_PATH}/${TARGET_NAME}\nrm -rf ${PROJECT_TEMP_ROOT}/${BASE_NAME}\n";
 		};
-		212F39752175C8C500EF0979 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "BASE_NAME=FacebookSDKs-iOS-${CURRENT_PROJECT_VERSION}\nMODULES_FOLDER_PATH=${EXECUTABLE_FOLDER_PATH}/Modules\nmkdir -p ${PROJECT_TEMP_ROOT}/${BASE_NAME}\ncurl -fsL https://origincache.facebook.com/developers/resources/?id=FacebookSDKs-iOS-${CURRENT_PROJECT_VERSION}.zip | tar -xf - -C ${PROJECT_TEMP_ROOT}/${BASE_NAME}\nmkdir -p ${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH} && cp ${PROJECT_TEMP_ROOT}/${BASE_NAME}/FBSDKMessengerShareKit.framework/Headers/*.h $_\nmkdir -p ${TARGET_BUILD_DIR}/${MODULES_FOLDER_PATH} && cp ${PROJECT_DIR}/${TARGET_NAME}/module.modulemap $_\nlipo -extract $( echo ${ARCHS} | sed -e 's/ / -extract /g' ) ${PROJECT_TEMP_ROOT}/${BASE_NAME}/FBSDKMessengerShareKit.framework/${TARGET_NAME} -o ${TARGET_BUILD_DIR}/${EXECUTABLE_FOLDER_PATH}/${TARGET_NAME}\nchmod 644 ${TARGET_BUILD_DIR}/${EXECUTABLE_FOLDER_PATH}/${TARGET_NAME}\nrm -rf ${PROJECT_TEMP_ROOT}/${BASE_NAME}\n";
-		};
 		212F39762175C8CE00EF0979 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -462,7 +412,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CURRENT_PROJECT_VERSION = 4.37.0;
+				CURRENT_PROJECT_VERSION = 4.40.0;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -473,7 +423,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CURRENT_PROJECT_VERSION = 4.37.0;
+				CURRENT_PROJECT_VERSION = 4.40.0;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -549,26 +499,6 @@
 				INFOPLIST_FILE = FBSDKCoreKit/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.facebook.FBSDKCoreKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-			};
-			name = Release;
-		};
-		212F393F2175C62100EF0979 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = FBSDKMessengerShareKit/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.facebook.FBSDKMessengerShareKit;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SWIFT_VERSION = 4.2;
-			};
-			name = Debug;
-		};
-		212F39402175C62100EF0979 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = FBSDKMessengerShareKit/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.facebook.FBSDKMessengerShareKit;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -674,15 +604,6 @@
 			buildConfigurations = (
 				212F39322175C61700EF0979 /* Debug */,
 				212F39332175C61700EF0979 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		212F393E2175C62100EF0979 /* Build configuration list for PBXNativeTarget "FBSDKMessengerShareKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				212F393F2175C62100EF0979 /* Debug */,
-				212F39402175C62100EF0979 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
